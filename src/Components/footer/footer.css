@@ -1,0 +1,170 @@
+footer{
+  background-color: #fff;
+}
+/* Help */
+.color-help{
+  background-color: #029E52;
+}
+
+.grid-help{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  height: 120px;
+  align-items: center;
+}
+
+.icon {
+  display: flex;
+  align-items: center;
+}
+
+.icon img {
+  padding: 12px;
+}
+
+.icon h2{
+  font-weight: 700;
+  font-size: 1.2em;
+  line-height: 1.2em;
+  color: #fff;
+}
+
+.icon p{
+  color: #fff;
+  font-weight: 300;
+  font-size: .875rem;
+}
+
+/* Links Footer */
+.grid-links{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;  
+}
+
+.links-footer{
+  margin: 30px 0;
+}
+
+.links-footer h5 {
+  color: #333;
+  text-transform: uppercase;
+  font-size: 1em;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.links-footer a{
+  display: block;
+  font-weight: 300;
+  padding: 5px 0;
+  color: #00939F !important;
+  text-decoration: none;
+}
+
+.social-icon img {
+  margin-right: 10px;
+}
+
+.social-icon a {
+  display: flex;
+  align-items: center;
+}
+
+
+/* Grid Copy */
+.grid-copy{
+  display: grid;
+  grid-template-areas:
+      "copy author";
+  grid-template-columns: auto auto;
+  align-items: center;
+
+  height: 60px;
+  font-size: 14px;
+  color: #333;
+}
+
+.copy{
+  grid-area: copy;
+}
+
+.author {
+  text-align: right;
+  grid-area: author;
+}
+
+.color-copy{
+  background-color: #EEEFEF;
+}
+
+.grid-copy span{
+  color: tomato;
+  font-size: 1.2em;
+}
+
+@media(max-width: 800px){
+  .grid-help{
+    height: auto;
+    gap: 20px;
+    align-items: baseline;
+  }
+
+  .grid-links{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .icon {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .icon img {
+    padding: 10px;
+    height: 70px;
+    width: 70px;
+  }
+
+  .icon h2{
+    font-size: 1rem;
+    line-height: 1.2em;
+  }
+
+  .icon p{
+    font-size: .875rem;
+  }
+
+    /* Grid Copy */
+    .grid-copy{
+      display: block;  
+      text-align: center;
+      height: auto;
+      padding: 10px 40px;
+    }
+  
+    .grid-copy .copy, .grid-copy .author{ 
+      padding: 10px 0;
+      text-align: center;
+    }
+}
+
+@media(max-width: 480px){
+
+  .grid-help{
+    grid-template-columns: 1fr;
+    gap: 40px;
+    padding: 40px;
+  }
+
+  .icon {
+    justify-content: center;
+  }
+
+  
+/* Links Footer */
+  .grid-links{
+    grid-template-columns: 1fr;
+    text-align: center;
+    justify-items: center;
+  }
+}

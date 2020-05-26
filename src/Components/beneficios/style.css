@@ -1,0 +1,59 @@
+.economize{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  margin-bottom: 20px;
+}
+  
+.economize h2{
+  grid-column: 1/5;
+  padding: 20px 0;
+  font-size: 1.5em;
+}
+.economize img{
+  max-width: 80px;
+}
+.economize div{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.economize h3{
+  font-size: 1rem;
+  line-height: 18px;
+  text-align: center;
+  margin-top: 25px;
+  margin-bottom: 15px;
+}
+.economize div span{
+  font-weight: 300;
+  font-size: 0.875rem;
+  line-height: 20px;
+}
+
+@media(max-width: 760px){
+  .economize{
+    grid-template-columns: 1fr 1fr;
+    gap: 40px 30px;
+  }
+
+  .economize h2{
+    grid-column: 1/3;
+    text-align: center;    
+  }
+
+  .economize div{
+    margin: auto;
+  }
+}
+
+@media(max-width: 400px){
+  .economize{
+    grid-template-columns: 1fr;
+  }
+
+  .economize h2{
+    grid-column: 1/2;
+  }
+}
